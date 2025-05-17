@@ -1,6 +1,6 @@
 <div align="center">
 
-# My configs
+# My configs (Arch)
 </div>
 
 # KDE
