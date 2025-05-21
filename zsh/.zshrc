@@ -10,9 +10,9 @@ function preexec() {
 }
 
 function precmd() {
+  local last_status=$?
   if [ $timer ]; then
     timer_show=$(($SECONDS - $timer))
-    last_status=$?
     if [ $last_status -eq 0 ]; then
       export RPROMPT="%F{231}// %F{green}⚡ ${timer_show}s%f"
     else
@@ -22,6 +22,7 @@ function precmd() {
   else
     export RPROMPT=""
   fi
+  return $last_status
 }
 
 PROMPT="%F{231}╭──(%F{67}%n@%m%F{231}) [ %F{67}%~%F{231} ]
