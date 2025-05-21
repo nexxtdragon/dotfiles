@@ -1,52 +1,47 @@
 <div align="center">
 
-# My configs (Arch)
+# My NixOS dots
+### It will end up like this!:  
+  
+<img src="https://github.com/nexxtdragon/nexxtdragon/raw/main/readme-assets/nixos_new.png?raw=true" height="400">
 </div>
 
-# KDE
-(i couldn't find a way to export KDE settings as config files, so yeah, enjoy)
-### System Settings > Colors & Themes:
-- Colors: Rose Pine Moon
-- Application style: Breeze (also set transparency to ~2.5)
-- Plasma style: Rose Pine Moon
-- Windows decorations: Utterly-Round-Dark
-- Icons: Breeze Dark (default)
-- Cursor: elementary
+## Instructions:
+1. Put configuration.nix in /etc/nixos
+2. Put home.nix in ~/.config/home-manager (if this directory doesn't exist, create one) **!! might be not working, so i also put classic configs in this repo**
+3. Run ```nixos-rebuild switch``` and ```home-manager build```
+4. Change the wallpaper
+5. Done! If something is off, you can also install my configs in the classic way!
 
-### System Settings > Text & fonts:
-- General: Noto Sans 10pt
-- Fixed width: Hack 10pt
-- Small: Noto Sans 10pt
-- Toolbar: DM Mono 10pt
-- Menu: DM Mono 10pt
-- Windows title: DM Mono 10pt
+## Additional:
+- Add the **unstable** channel: ```sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos```, ```sudo nix-channel --update```
+- Remove ```unstable.amnezia-vpn``` from the package list if you encounter errors about it
 
-- Anti-Aliasing: Enabled
-- Sub-pixel rendering: RGB
-- Hinting: Slight
+<br>
 
-### System Settings > Task Switcher:
-- Visualization: Flip Switch
+<div align="center">
 
-### System Settings > Desktop effects:
-#### Accessibility:
-- Zoom
+# Alternative - If you're not on NixOS, or home.nix won't work, you can install my configs manually! See the repo for dotfiles
+</div>
 
-#### Appearance:
-- Background contrast
-- Blur
-- Fading popups
-- Full screen
-- Highlight screen edges and hot corners
-- Login
-- Logout
-- Maximize
-- Sliding popups
-- Translucency
-- Squash
 
-#### Focus:
-- Dialog parent
+## GNOME Settings:
 
-# Ugghh
-### It's 2AM, I'll finish that later :/
+### Extensions:
+- Blur my Shell
+- Compiz windows effect
+- Dash to Dock
+- Lockscreen Extension
+- Logo Menu
+- Media Label and Controls (Mpris Label)
+- System monitor
+
+### Tweaks:
+- Font - JetBrains Mono NL Semi-Bold
+- Cursor - Nordic-cursors
+- Icons - Tela-circle-dark
+- Titlebar Buttons - Minimize and close only
+- Center new windows - on
+
+### Settings:
+- All defaults, just enable dark mode and change the wallpaper
