@@ -24,14 +24,35 @@ with lib.hm.gvariant;
       enable = true;
       custom = "$HOME/.oh-my-zsh/custom";
       theme = "";
-      plugins = ["git"];
+      plugins = [""];
     };
     initExtra = ''
       export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-      export PATH=$PATH:$HOME/.spicetify
 
       autoload -U colors && colors
-      PROMPT="%F{231}╭─ %F{63}%n@%m%f\n%F{231}╰─> %F{63}%~%f "
+
+      function preexec() {
+      timer=${timer:-$SECONDS}
+      }
+
+      function precmd() {
+      if [ $timer ]; then
+      timer_show=$(($SECONDS - $timer))
+      last_status=$?
+      if [ $last_status -eq 0 ]; then
+      export RPROMPT="%F{231}// %F{green}⚡ ${timer_show}s%f"
+      else
+      export RPROMPT="%F{231}// %F{red}❌ ${timer_show}s%f"
+      fi
+    unset timer
+  else
+    export RPROMPT=""
+  fi
+}
+
+
+      PROMPT="%F{231}╭──(%F{67}%n@%m%F{231}) [ %F{67}%~%F{231} ]
+%F{231}╰─╼ \$ %f"
       RPROMPT=""
 
       autoload -U compinit && compinit
