@@ -3,7 +3,7 @@
 # My NixOS dots
 ### It will end up like this!:  
   
-<img src="https://github.com/nexxtdragon/nexxtdragon/raw/main/readme-assets/nixos_new.png?raw=true" height="400">
+<img src="https://github.com/nexxtdragon/dotfiles/blob/main/screenshot.png?raw=true" height="400">
 </div>
 
 ## Instructions:
