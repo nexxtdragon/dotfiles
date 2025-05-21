@@ -3,7 +3,7 @@
 let
   home-manager = builtins.fetchTarball {
     url = "https://github.com/nix-community/home-manager/archive/release-24.11.tar.gz";
-    sha256 = "00wp0s9b5nm5rsbwpc1wzfrkyxxmqjwsc1kcibjdbfkh69arcpsn";
+    sha256 = "00000000000000000000000000"; # dummy hash, error message will show you the actual one, replace it!
   };
 in
 
@@ -86,7 +86,6 @@ in
   # Install firefox.
   programs.firefox.enable = true;
   
-  # my config lil place
   programs.steam.enable = true;
   nixpkgs.config.allowUnfree = true;
   services.flatpak.enable = true;
