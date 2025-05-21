@@ -1,7 +1,7 @@
 <div align="center">
 
 # My NixOS dots
-### It will end up like this!:  
+### It will end up looking like this!:  
   
 <img src="https://github.com/nexxtdragon/dotfiles/blob/main/screenshot.png?raw=true" height="400">
 </div>
@@ -21,7 +21,8 @@
 
 <div align="center">
 
-# Alternative - If you're not on NixOS, or home.nix won't work, you can install my configs manually! See the repo for dotfiles
+# Alternative
+**If you're not on NixOS, or home.nix won't work, you can install my configs manually! See the repo for classic dotfiles**
 </div>
 
 
