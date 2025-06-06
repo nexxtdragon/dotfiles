@@ -3,7 +3,7 @@
 # My NixOS dots
 ### It will end up looking like this!:  
   
-<img src="https://github.com/nexxtdragon/dotfiles/blob/main/screenshot.png?raw=true" height="400">
+<img src="https://github.com/nexxtdragon/dotfiles/blob/main/screenshot_new.png?raw=true" height="400">
 </div>
 
 ## Instructions:
